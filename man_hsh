@@ -1,0 +1,45 @@
+.TH man 2 "25 November 2020" "hsh man page"
+
+.SH NAME
+
+.B simple_shell - command interpreter (shell)
+
+.SH SYNOPSIS
+
+.B ./hsh
+
+.SH DESCRIPTION
+
+simple_shell is a command line interpreter as an implementation of shell in C.
+only three commands are builtin in this shell: cd, help, exit.
+
+.SH OVERVIEW
+
+simple_shell reads only from terminal at this moment.
+
+.SH INVOCATION
+
+Compile simple_shell with the GNU Compiler Collection.
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+simple_shell can be run in interactive mode by entering the below command on the command line followd by enter.
+.P
+.RS
+.B $ ./hsh
+.P
+.RE
+
+.SH BUGS
+No known bugs at this writing.
+
+.SH AUTHOR
+
+medfouedjenni <medfouedjenni@gmail.com>
+
+Abderrahmen Babchia  <abdou.babchia64@gmail.com>
+
+.SH SEE ALSO
+sh
