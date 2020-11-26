@@ -27,29 +27,24 @@ int number_str(char *s)
 */
 char *_strdup(char *s)
 {
-	int i;
-	char *d = NULL;
+{
+	size_t len, i;
+	char *str2;
 
-	if (s == NULL)
-		return (NULL);
-	while (s[i] != '\0')
+	len = _strlen(s);
+	str2 = malloc(sizeof(char) * (len + 1));
+	if (!str2)
 	{
-		i++;
-	}
-	d = malloc((i + 1) * sizeof(char));
-	if (d == NULL)
-	{
-		perror("Allocation Error");
 		return (NULL);
 	}
-	i = 0;
-	while (s[i] != '\0')
+
+	for (i = 0; i <= len; i++)
 	{
-		d[i] = s[i];
-		i++;
+		str2[i] = s[i];
 	}
-	d[i] = '\0';
-	return (d);
+
+	return (str2);
+}
 }
 /**
 * _strlen - length of a string.
