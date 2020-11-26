@@ -39,3 +39,15 @@ int execute(char **input, char *buff, char *fpathbuff)
 	free(buff);
 	return (exitv);
 }
+/**
+ * signal_to_handel - Handle ^C
+ * @sig:Captured Signal
+ * Return: Void
+ */
+void signal_to_handel(int sig)
+{
+	if (sig == SIGINT)
+	{
+		write(1, "\n$ ", 3);
+	}
+}

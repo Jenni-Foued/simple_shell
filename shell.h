@@ -15,7 +15,7 @@
 #include <signal.h>
 
 extern char **environ;
-
+void signal_to_handel(int sig);
 int builtins(char **input, char *buff, int exit);
 char *concatation(char *tmp, char **input, char *token);
 int execute(char **input, char *buff, char *fpathbuff);

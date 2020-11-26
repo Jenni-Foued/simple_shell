@@ -10,13 +10,14 @@ int main(void)
 	char **input;
 	int exit = 0;
 
-	signal(SIGINT, SIG_IGN);
+	signal(SIGINT, signal_to_handel);
 	PATH = _getenv("PATH");
 	if (PATH == NULL)
 		return (1);
 	do {
 		input = NULL;
-		p_prompt();
+		if (isatty(STDIN_FILENO))
+			p_prompt();
 		buff = readline();
 		if (*buff != '\0')
 		{
