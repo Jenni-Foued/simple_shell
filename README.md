@@ -59,6 +59,4 @@ Abderrahmen Babchia | [Github](https://l.facebook.com/l.php?u=https%3A%2F%2Fgith
 Med Foued Jenni | [Github](https://github.com/Jenni-Foued) | medfouedjenni@gmail.com
 
 ## License
-
-simple_shell is open source.
-No permession needed for download or use.
+See the [LICENSE](https://github.com/Jenni-Foued/simple_shell/blob/master/LICENSE) file for license rights and limitations (MIT).
